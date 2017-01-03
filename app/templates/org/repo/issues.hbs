@@ -1,5 +1,9 @@
-<ul>
-  <li>Issues</li>
-</ul>
-
 {{outlet}}
+
+<p>Issues</p>
+
+<ul>
+  {{#each content as |issue|}}
+    <li>{{issue.title}}</li>
+  {{/each}}
+</ul>
